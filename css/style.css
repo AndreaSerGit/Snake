@@ -1,0 +1,166 @@
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bangers', cursive;
+  display: flex;
+  align-items: center;
+  background-image: url('../img/appBackGround.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.apple {
+  width: 30%;
+}
+
+.gameScore {
+  height: 50%;
+}
+
+/* App BackGround */
+.layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -9000;
+}
+
+.snakeBack {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 250px;
+  z-index: 10000;
+}
+
+/* Main Area */
+.container {
+  display: flex;
+  margin-left: 50px;
+  width: 80%;
+  height: 80%;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Game Area */
+canvas {
+  width: 75%;
+  height: 100%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 5px 0 5px -2px rgba(0, 0, 0, 0.3);
+  background-image: url('../img/woods.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Score Area */
+aside {
+  background-image: url('../img/asideBackGround.jpg');
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  width: 25%;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+aside span {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+aside button {
+    font-family: 'Bangers', cursive;
+    width: 90%;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+    outline: none;
+}
+
+/* End Game Screen */
+#loseScreen {
+  display: none;
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: rgba(0 , 0 , 0, 0.5);
+}
+.youLose {
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  top: 15%;
+  left: 20%;
+  border-radius: 10px;
+  background-image: url('../img/asideBackGround.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 6px solid black;
+}
+
+.youLose h2 {
+  font-size: 70px;
+}
+
+.results {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+.results > div {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.results > div  h3 {
+  font-size: 50px;
+}
+.results .apple {
+  width: 50%;
+}
+.numberApple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
