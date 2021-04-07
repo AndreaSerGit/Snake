@@ -61,6 +61,7 @@ h3 {
 .container {
   display: flex;
   margin-left: 50px;
+  max-height: 450px;
   width: 80%;
   height: 80%;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.6);
